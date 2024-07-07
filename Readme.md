@@ -37,6 +37,12 @@ Setup the enviroment variables
 cp .env.example .env
 ```
 
+**NOTE:** Before running application make sure Redis is running, I have used docker image of redis-stack.
+To run redis-stack(For linux):
+```
+sudo docker compose up
+```
+
 Run the application
 
 ```
