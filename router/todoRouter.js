@@ -13,10 +13,8 @@ async function sendMail(deadline, todo, email) {
     text: `Your todo "${todo} is reaching its deadline. It is set to expire on ${date.toDateString()} at ${date.toTimeString()}`,
     sendAt: deadline - 10 * 60,
   };
-  console.log(msg);
 
-  const res = await mail.send(msg);
-  console.log(res);
+  await mail.send(msg);
 }
 
 const todoRouter = Router();
@@ -39,7 +37,6 @@ todoRouter.get("/", authMiddleware, async (req, res) => {
 
     res.status(200).json({ todo: arr });
   } catch (error) {
-    console.error(error);
     res.status(500).json({ error });
   }
 });
@@ -68,7 +65,6 @@ todoRouter.post("/create", authMiddleware, async (req, res) => {
 
     res.status(201).json({ r });
   } catch (error) {
-    console.error(error);
     res.status(403).json({ error: error.message });
   }
 });
