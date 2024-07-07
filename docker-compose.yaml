@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  redis-stack:
+    image: redis/redis-stack
+    container_name: redisDB
+    ports:
+      - 6379:6379
+      - 8001:8001
+#   volumes:
+#     - redis_data: /data
+#
+# volumes:
+#   - redis_data:
