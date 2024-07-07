@@ -9,6 +9,7 @@ This is a todo backend application made using express.js that uses Redis as data
 - bcrypt
 - dotenv
 - jsonwebtoken
+- @sendgrid/mail
 
 # Local Setup
 
@@ -29,6 +30,8 @@ npm install
 ```
 
 Setup the enviroment variables
+
+\***\*NOTE:\*\*** I have used sendgrid's module to send email, so make account on [sendgrid](https://app.sendgrid.com/) and enter the variables value in env or change the code in sendMail function in authRouter.js according to your email sender service.
 
 ```
 cp .env.example .env
