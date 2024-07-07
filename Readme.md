@@ -48,3 +48,9 @@ Run the application
 ```
 npm start
 ```
+
+## Demo Screenshots
+In this we have a todo named "Important task" with a deadline in few minutes:
+![image](https://github.com/ritikprajapat21/todo-backend-with-redis/assets/112960100/fe9e8a2f-0d13-47c7-a090-732e4e50759a)
+This is the mail that you will recieve when the todo is about to expire:
+![image](https://github.com/ritikprajapat21/todo-backend-with-redis/assets/112960100/617dfc1d-c027-4ba0-95ef-8782a40654cf)
